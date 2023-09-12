@@ -35,7 +35,7 @@ a:hover {
 
 body#about img { height: 15em; }
 
-p {
+p, li {
     max-width: 50em;
 }
 
