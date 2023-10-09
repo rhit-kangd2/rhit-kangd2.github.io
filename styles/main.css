@@ -36,7 +36,6 @@ a:hover {
 body#about img { height: 15em; }
 
 p, li {
-    max-width: 50em;
     font-size: 18px;
 }
 
@@ -65,16 +64,12 @@ body > * {
 body > header {
     grid-area: head;
     border-bottom: 2px solid var(--heading-color);
-    /* z-index: 100; */
-    /* position: fixed; */
 }
 
 body > nav {
     grid-area: nav;
     padding-top: var(--vertical-space);
     border-bottom: 2px solid var(--heading-color);
-    /* z-index: 100; */
-    /* position: fixed; */
 }
 
 body > nav ul {
@@ -145,6 +140,11 @@ div.desc {
     width: 50%;
 }
 
+.resume {
+    border: 2px solid black;
+    margin: 5em 10em;
+}
+
 @media only screen and (max-width: 765px){
     .responsive {
         margin: 6px 0;
@@ -155,23 +155,9 @@ div.desc {
         width: 100%;
         height: 25em;
     }
-}
 
-/* body#portfolio ul#portfolioItems {
-    display: flex;
-    flex-wrap: wrap;
-    flex: 1;
-    list-style-type: none;
-    padding: 0;
-}
-
-@media screen and (min-width: 24em) {
-    body#portfolio ul#portfolioItems li {
-        flex-basis: 48%;
-        padding-right: 2%;
+    .resume {
+        border: 2px solid black;
+        margin: 2em 2em;
     }
 }
-
-body#portfolio ul#portfolioItems li img {
-    max-width: 100%;
-} */
