@@ -6,7 +6,8 @@
         <title>Edward Kang's Personal Website! (WIP)</title>
         <link rel="stylesheet" href="styles/normalize.css" />
         <link rel="stylesheet" href="styles/main.css" />
-        <link rel="icon" href="images/favicon.png" />
+        <link rel="icon" href="images/favicon.ico" />
+        <link rel="manifest" href="site.webmanifest" />
     </head>
     <body id="about">
         <header>
@@ -21,11 +22,17 @@
         </nav>
         <main>
             <h1>About</h1>
-            <img src="images/avatar.jpg" />
-            <p>I am a second year student at Rose-Hulman Institute of Technology at Terre Haute, IN, the crossroads of America. 
-                I am pursuing a Computer Science degree and I am expected to graduate in spring of 2025.</p>
-            <p>Before attending Rose, I lived in San Jose, California. Before that, I used to live in various parts of South Korea and in Hong Kong.</p>
-            <p>I like playing the cello on rainy afternoons, going to the gym after work, and dreaming about where I would live next with my future family.</p>
+            <div class="container">
+                <div class="containerImage">
+                    <img src="images/avatar.jpg" alt="Edward Kang (me) during my freshman year!"/>
+                </div>
+                <div class="containerText">
+                    <p>I am a second year student at Rose-Hulman Institute of Technology at Terre Haute, IN, the crossroads of America. 
+                        I am pursuing a Computer Science degree and I am expected to graduate in spring of 2025.</p>
+                    <p>Before attending Rose, I lived in San Jose, California. Before that, I used to live in various parts of South Korea and in Hong Kong.</p>
+                    <p>I like playing the cello on rainy afternoons, going to the gym after work, and dreaming about where I would live next with my future family.</p>
+                </div>
+            </div>
         </main>
         <footer>
             You can email at kangd2 (at) rose-hulman.edu

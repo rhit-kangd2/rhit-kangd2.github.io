@@ -37,42 +37,58 @@ body#about img { height: 15em; }
 
 p, li {
     max-width: 50em;
+    font-size: 18px;
 }
 
 body {
     display: grid;
-    grid-template-areas: "head  head"
-                         "nav   nav"
-                         "main  main"
-                         "foot  foot";
-    grid-template-columns: 1fr 4fr;
-    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas: "head  head  nav"
+                         "main  main  main"
+                         "foot  foot  foot";
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: auto 1fr auto;
 }
 
-@media screen and (min-width: 24em) {
+/* @media screen and (min-width: 24em) {
     body {
-        grid-template-areas: "head  head"
-                             "nav   main"
+        grid-template-areas: "head  nav"
+                             "main  main"
                              "foot  foot";
         grid-template-rows: auto 1fr auto;
     }
-}
+} */
 
 body > * {
-    padding-left: var(--horizontal-space);
+    padding: 0 var(--horizontal-space);
 }
 
 body > header {
     grid-area: head;
+    border-bottom: 2px solid var(--heading-color);
+    /* z-index: 100; */
+    /* position: fixed; */
 }
 
 body > nav {
     grid-area: nav;
+    padding-top: var(--vertical-space);
+    border-bottom: 2px solid var(--heading-color);
+    /* z-index: 100; */
+    /* position: fixed; */
 }
 
 body > nav ul {
+    display: table;
     list-style-type: none;
+    margin: 0;
     padding: 0;
+    text-align: center;
+    width: 100%;
+}
+
+body > nav ul > li {
+    display: table-cell;
+    padding: 5px;
 }
 
 body > main {
@@ -92,7 +108,56 @@ header h1, footer h1 {
     margin: 0;
 }
 
-body#portfolio ul#portfolioItems {
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerImage {
+    max-width: 100%;
+    flex-basis: 40%;
+}
+
+.containerText {
+    padding-left: 20px;
+}
+
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+.responsive {
+    float: left;
+    width: 50%;
+}
+
+@media only screen and (max-width: 765px){
+    .responsive {
+        margin: 6px 0;
+        width: 100%;
+    }
+    
+    div.gallery img {
+        width: 100%;
+        height: 25em;
+    }
+}
+
+/* body#portfolio ul#portfolioItems {
     display: flex;
     flex-wrap: wrap;
     flex: 1;
@@ -109,4 +174,4 @@ body#portfolio ul#portfolioItems {
 
 body#portfolio ul#portfolioItems li img {
     max-width: 100%;
-}
+} */

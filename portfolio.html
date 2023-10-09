@@ -6,7 +6,8 @@
         <title>Edward Kang's Personal Website! (WIP)</title>
         <link rel="stylesheet" href="styles/normalize.css" />
         <link rel="stylesheet" href="styles/main.css" />
-        <link rel="icon" href="images/favicon.png" />
+        <link rel="icon" href="images/favicon.ico" />
+        <link rel="manifest" href="site.webmanifest" />
     </head>
     <body id="portfolio">
         <header>
@@ -22,22 +23,34 @@
         <main>
             <h1>Portfolio</h1>
             <p>Here are some of my work!</p>
-            <ul id="portfolioItems">
-                <li>
-                    <h2><a href="a">Database Network Lab</a></h2>
-                    <img src="images/portfolio/network.jpeg" />
-                    <p>Developed and implemented a database in C with a fully functioning CRUD API. Enabled communication with other computer databases via socket programming, creating a server to manage the database and a client to connect to other servers.</p>
-                <li>
-                    <h2><a href="a">Sorting Races Project</a></h2>
-                    <img src="images/portfolio/sorting.jpeg" />
-                    <p>Developed and implemented heapsort and single-pivot quicksort methods in Java. Analyzed the runtime of sorting algorithms (heapsort, quicksort, and Java built-in merge sort, BST sort, and quicksort) on differently sorted arrays (random, random without duplicates, almost sorted, almost reversed sorted).</p>
-                </li>
-                <li>
-                    <h2><a href="a">Genetics Algorithm Research Project</a></h2>
-                    <img src="images/portfolio/genetics.jpeg" />
-                    <p>Developed and implemented a Java program that simulates the evolution of simple organisms through real-time user-set variables and graphical data with Java GUI. Designed and performed experiments to recreate past study on evolution with learning.</p>
-                </li>
-            </ul>
+    
+            <div class="responsive">
+                <div class="gallery">
+                    <img src="images/portfolio/network.jpeg" alt="Networks across a globe">
+                    <div class="desc">
+                        <h2><a href="portfolio.html">Database Network Lab</a></h2>
+                        <p>Developed and implemented a database in C with a fully functioning CRUD API. Enabled communication with other computer databases via socket programming, creating a server to manage the database and a client to connect to other servers.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="responsive">
+                <div class="gallery">
+                    <img src="images/portfolio/sorting.jpeg" alt="Sorting algorithms">
+                    <div class="desc">
+                        <h2><a href="portfolio.html">Sorting Races Project</a></h2>
+                        <p>Developed and implemented heapsort and single-pivot quicksort methods in Java. Analyzed the runtime of sorting algorithms (heapsort, quicksort, and Java built-in merge sort, BST sort, and quicksort) on differently sorted arrays (random, random without duplicates, almost sorted, almost reversed sorted).</p>
+                    </div>
+                </div>
+            </div>
+            <div class="responsive">
+                <div class="gallery">
+                    <img src="images/portfolio/genetics.jpeg" alt="DNA strands">
+                    <div class="desc">
+                        <h2><a href="portfolio.html">Genetics Algorithm Research Project</a></h2>
+                        <p>Developed and implemented a Java program that simulates the evolution of simple organisms through real-time user-set variables and graphical data with Java GUI. Designed and performed experiments to recreate past study on evolution with learning.</p>
+                    </div>
+                </div>
+            </div>
         </main>
         <footer>
             You can email at kangd2 (at) rose-hulman.edu
